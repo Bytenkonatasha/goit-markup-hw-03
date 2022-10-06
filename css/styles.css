@@ -9,7 +9,7 @@ body {
      color: var(--color-primery);
      font-family:"Roboto",sans-serif;
      font-size:14px;
-     background-color: var(--color-backgraund);
+     /* background-color: var(--color-backgraund); */
     }
 li{
      list-style:none;
@@ -23,10 +23,8 @@ ul{
   padding: 0;
 }
 /* header */
-.items-nav {
-     margin: 0;
-     padding: 0;
-     list-style: none;
+.items :not(:last-child) {
+     margin-right: 50px;
 }
 
 .container {
@@ -39,11 +37,17 @@ ul{
     margin-left: auto;
     margin-right: auto;
     }
-
+.header {
+      border-bottom: 1px solid #ececec;
+}
 .nav-header {
      display:flex;
      align-items: center;
 }
+.nain-nav {
+     display:flex;
+     align-items: center;
+    }
 
 .site-nav {
      display:flex;
@@ -69,12 +73,6 @@ ul{
      margin-left: 50px;
 }
 
-.nain-nav {
-     display:flex;
-     align-items: center;
-     border: 1px solid #ececec;
-    }
-
 .logo-type{
      color:#000000;
      font-family: 'Raleway',sans-serif;
@@ -90,9 +88,8 @@ ul{
 }
 
 .link {
-     margin-right: 50px;
-   
-     color:var(--color-secondary);
+      
+     color:var(--color-primery);
      font-weight: 500;
      text-decoration: none;
 }
@@ -102,13 +99,12 @@ ul{
 }
 /* main */
 .section {
-        padding-top: 47px;
-        padding-bottom: 47px;
+        padding-top: 94px;
+        padding-bottom: 94px;
         }
 .hero {
     text-align: center;
     padding:200px 0;
-    /* margin-bottom:94px; */
     background: #2F303A;
     }         
 
@@ -121,6 +117,11 @@ ul{
          letter-spacing: 0.06em;
          text-transform: uppercase;
          padding-bottom: 30px;
+         width: 696px;
+         margin-top: 0;
+         margin-bottom: 0;
+         margin-left: auto;
+         margin-right: auto;
     }
 .buttons {
          border-radius: 4px;
@@ -134,15 +135,19 @@ ul{
          letter-spacing: 0.06em;
          cursor: pointer;
          font-family:"Roboto",sans-serif;
+         width: 216px;
+         height: 50px;
           }
 
 .work {
      display:flex;
-     /* margin-bottom:94px; */
-}
+    }
 .work .work-item:not(:last-child){
     margin-right: 30px;
 } 
+.headline {
+       padding-bottom: 47px;
+}
 .visually-hidden {
          position: absolute;
          white-space: nowrap;
@@ -172,7 +177,7 @@ ul{
          letter-spacing: 0.03em;
 }
 .subject {  
-         padding-bottom: 50px;  
+         margin-bottom: 50px;  
 
          font-weight: 700;
          font-size: 36px;
@@ -193,15 +198,16 @@ ul{
 .img-item {
          text-align: center;
         }
-.foto {
-    margin-bottom: 30px;
-}
 .name {   
+         margin-bottom: 10px;    
          font-weight: 500;
          font-size: 16px;
          line-height: 1.19;           
          letter-spacing: 0.03em;
-         padding-bottom: 10px;
+     }
+.name-nav {
+     padding-top: 30px;
+     padding-bottom: 30px;
 }
 .desc {
          font-size: 16px;
@@ -216,15 +222,17 @@ ul{
     padding-bottom: 60px;
     display: block;
 }
-
+.logo-nav {
+     margin-top: 20px;
+}
 .basement {
     margin-bottom: 9px;
-}
+    }
 .one {
-         color:var(--color-accent);
-         margin-bottom:20px;
-     }
-.list{   color: var(--color-accent);      
+        color:var(--color-accent);
+      }
+.list {
+         color: var(--color-accent);      
          letter-spacing: 0.03em;
          font-style:normal;
          text-decoration: none;
@@ -233,15 +241,13 @@ ul{
 .item {
         color: rgba(255, 255, 255, 0.6);
 }
+
 .list:hover,
 .list:focus{
         color:var(--color-brand);
 }
 
 /* Portfolio */
-.portfolio-nav {
-    margin-bottom: 94px;
-}
 .about {
          display: flex;
          justify-content: center;
@@ -256,12 +262,13 @@ ul{
     flex-wrap:wrap ;
 }
 .flex-element {
+    border: 1px solid rgba(238, 238, 238, 1);
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
 .flex-element:nth-last-child(-n+3){
-    margin-right: 0;
+    margin-bottom: 0;
 }
 .flex-element:nth-child(3n) {
     margin-right: 0;
@@ -284,7 +291,34 @@ ul{
          color: var(--color-accent);
          background-color: var(--color-brand);
 }
+.all {
+     margin-bottom: 50px;
+}
+.small {
+     width: 73px; 
+     height: 38px;
+}
+.medium { 
+        width: 125px; 
+        height: 38px;
+}
+.big {
+     width: 112px; 
+        height: 38px;
+}
+.large {
+     width: 103px; 
+     height: 38px;
+}
+.excerpt {
+     width: 130px; 
+     height: 38px;
+}
+.current {
+     padding: 20px 24px;
+}
 .heading {
+         margin-bottom: 4px;          
          font-weight: 700;
          font-size: 18px;
          line-height:2;           
