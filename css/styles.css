@@ -23,10 +23,12 @@ ul{
 }
 /* header */
 
-.items:not(:last-child) {
+/* .items:not(:last-child) {
      margin-right: 50px;
-}
-
+} */
+/* .items {
+    gap: 50px;
+} */
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -70,7 +72,7 @@ ul{
      margin-left: auto;
      } 
 
-.auth-nav .item + .item {
+.auth-nav .items + .items {
      margin-left: 50px;
 }
 .logo-type{
